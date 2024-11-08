@@ -3,7 +3,7 @@
   "displayName": "sketch-viewer",
   "description": "preview sketch file",
   "packageManager": "npm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "xiaolidan00",
   "publisher": "xiaolidan00",
   "engines": {
