@@ -2,8 +2,10 @@
   "name": "vscode-sketch-viewer-extension",
   "displayName": "sketch-viewer",
   "description": "preview sketch file",
+  "packageManager": "npm",
   "version": "1.0.0",
-  "publisher": "764937567@qq.com",
+  "author": "xiaolidan00",
+  "publisher": "xiaolidan00",
   "engines": {
     "vscode": "^1.95.0"
   },
