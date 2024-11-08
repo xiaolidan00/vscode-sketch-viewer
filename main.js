@@ -16,7 +16,9 @@ img.addEventListener('load', () => {
 
   function createStyle() {
     // console.log('style', setting);
-    img.style.transform = `scale(${setting.scale}) translate(${setting.left}px,${setting.top}px)`;
+    img.style.transform = `scale(${setting.scale})`;
+    img.style.left = setting.left + 'px';
+    img.style.top = setting.top + 'px';
   }
   function addAction(id, cb) {
     const dom = document.getElementById(id);
@@ -54,8 +56,10 @@ img.addEventListener('load', () => {
       const top = setting.top + offsety;
 
       const s = setting.scale;
-      const w = s * setting.w;
-      const h = s * setting.h;
+      let w = s * setting.w;
+      let h = s * setting.h;
+      w = w > window.innerWidth ? w : window.innerWidth;
+      h = h > window.innerHeight ? h : window.innerHeight;
       //   console.log('move');
       if (left >= -w && left <= w && top >= -h && top <= h) {
         setting.left = left;
